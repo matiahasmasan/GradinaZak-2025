@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofoliu Gradina Zak - Vezi proiectele noastre de amenajare grădini, peisagistică, toaletare copaci și alte servicii în Maramureș și Baia Mare."
+    />
+    <meta
+      name="keywords"
+      content="portofoliu gradina zak, proiecte amenajare gradini, peisagistica maramures, realizari gradini baia mare"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Portofoliu - Gradina Zak | Proiecte Amenajare Grădini Maramureș"
+    />
+    <meta
+      property="og:description"
+      content="Descoperă proiectele noastre de amenajare grădini și peisagistică în Maramureș. Peste 25 de ani de experiență."
+    />
+    <meta property="og:image" content="https://gradinazak.ro/images/logo.jpg" />
+    <meta property="og:url" content="https://gradinazak.ro/portofolio.html" />
+
+    <title>
+      Portofoliu - Gradina Zak | Proiecte Amenajare Grădini Maramureș
+    </title>
+    <link rel="canonical" href="https://gradinazak.ro/portofolio.html" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2F5233",
+              secondary: "#4A7C59",
+              accent: "#8FB996",
+              light: "#E8F5E8",
+              dark: "#1A2F1D",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+            animation: {
+              "fade-in": "fadeIn 0.6s ease-in-out",
+              "slide-up": "slideUp 0.8s ease-out",
+              "zoom-in": "zoomIn 0.3s ease-out",
+              "scale-up": "scaleUp 0.3s ease-out",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              slideUp: {
+                "0%": { opacity: "0", transform: "translateY(40px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              zoomIn: {
+                "0%": { opacity: "0", transform: "scale(0.9)" },
+                "100%": { opacity: "1", transform: "scale(1)" },
+              },
+              scaleUp: {
+                "0%": { transform: "scale(1)" },
+                "100%": { transform: "scale(1.05)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .filter-btn {
+        @apply px-6 py-3 rounded-full font-medium transition-all duration-300 border-2;
+        @apply border-gray-200 text-gray-600 hover:border-primary hover:text-primary;
+      }
+      .filter-btn.active {
+        @apply bg-primary text-white border-primary;
+      }
+      .project-item {
+        @apply opacity-100 scale-100 transition-all duration-500;
+      }
+      .project-item.hidden {
+        @apply opacity-0 scale-95 pointer-events-none;
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-white" data-page="portfolio">
+    <!-- Navigation Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative pt-32 pb-24 bg-gradient-to-br from-primary via-secondary to-accent overflow-hidden"
+    >
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img
+          src="images/pool1.jpg"
+          alt="Grădină amenajată profesional"
+          class="w-full h-full object-cover"
+        />
+        <!-- Gradient Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/85 to-accent/80"
+        ></div>
+      </div>
+
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute inset-0"
+          style="
+            background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.1&quot;%3E%3Ccircle cx=&quot;30&quot; cy=&quot;30&quot; r=&quot;2&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+          "
+        ></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center text-white">
+          <div
+            class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-fade-in"
+          >
+            <i class="fas fa-camera mr-2"></i>
+            Galeria Noastră
+          </div>
+
+          <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
+            Proiecte de
+            <span
+              class="bg-gradient-to-r from-white to-accent bg-clip-text text-transparent"
+            >
+              Excepție
+            </span>
+          </h1>
+
+          <p
+            class="text-xl md:text-2xl text-white/90 mb-12 animate-slide-up max-w-4xl mx-auto leading-relaxed"
+          >
+            Peste 25 de ani de experiență în transformarea spațiilor verzi în
+            adevărate opere de artă peisagistică
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-8 animate-fade-in"
+          >
+            <div class="flex items-center text-white/90">
+              <div
+                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-seedling text-xl"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-2xl font-bold">300+</div>
+                <div class="text-sm opacity-80">Proiecte Finalizate</div>
+              </div>
+            </div>
+
+            <div class="flex items-center text-white/90">
+              <div
+                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-award text-xl"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-2xl font-bold">25+</div>
+                <div class="text-sm opacity-80">Ani Experiență</div>
+              </div>
+            </div>
+
+            <div class="flex items-center text-white/90">
+              <div
+                class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+              >
+                <i class="fas fa-users text-xl"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-2xl font-bold">100+</div>
+                <div class="text-sm opacity-80">Clienți</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <div
+          class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center"
+        >
+          <div
+            class="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-primary mb-4 animate-fade-in"
+          >
+            Explorează Categoriile
+          </h2>
+          <p class="text-gray-600 text-lg animate-slide-up">
+            Filtrează proiectele după tipul de serviciu pentru a găsi inspirația
+            perfectă
+          </p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-3 mb-8">
+          <button class="filter-btn active group" data-filter="all">
+            <i
+              class="fas fa-th-large mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Toate Proiectele
+          </button>
+          <button class="filter-btn group" data-filter="amenajare">
+            <i
+              class="fas fa-seedling mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Amenajare Grădini
+          </button>
+          <button class="filter-btn group" data-filter="toaletare">
+            <i
+              class="fas fa-tree mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Toaletare Copaci
+          </button>
+          <button class="filter-btn group" data-filter="irigatii">
+            <i
+              class="fas fa-tint mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Irigații
+          </button>
+          <button class="filter-btn group" data-filter="drenaje">
+            <i
+              class="fas fa-water mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Drenaje
+          </button>
+          <button class="filter-btn group" data-filter="pavaje">
+            <i
+              class="fas fa-road mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Pavaje
+          </button>
+          <button class="filter-btn group" data-filter="transport">
+            <i
+              class="fas fa-truck mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Transport
+          </button>
+          <button class="filter-btn group" data-filter="defrisari">
+            <i
+              class="fas fa-cut mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Defrișări
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Gallery Grid -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          id="portfolio-grid"
+        >
+          <!-- Project Card 1 -->
+          <div class="project-item group" data-category="amenajare">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="images/gradina1.jpg"
+                  alt="Amenajare grădină modernă"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 bg-accent text-white rounded-full text-sm font-medium backdrop-blur-sm"
+                  >
+                    <i class="fas fa-seedling mr-1"></i>
+                    Amenajare
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <h3 class="text-xl font-bold mb-2">
+                    Grădină Modernă Rezidențială
+                  </h3>
+                  <p class="text-sm text-white/90">
+                    Amenajare completă cu gazon natural și sisteme de iluminat
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    2024
+                  </div>
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Baia Mare
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-item group" data-category="amenajare">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="images/gradina3.jpg"
+                  alt="Peisagistică contemporană"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 bg-accent text-white rounded-full text-sm font-medium backdrop-blur-sm"
+                  >
+                    <i class="fas fa-seedling mr-1"></i>
+                    Amenajare
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <h3 class="text-xl font-bold mb-2">
+                    Peisagistică Contemporană
+                  </h3>
+                  <p class="text-sm text-white/90">
+                    Design modern cu plante ornamentale și elemente decorative
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    2024
+                  </div>
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Baia Mare
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-item group" data-category="toaletare">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="images/toaletare1.jpg"
+                  alt="Toaletare copaci ornamentali"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 bg-secondary text-white rounded-full text-sm font-medium backdrop-blur-sm"
+                  >
+                    <i class="fas fa-tree mr-1"></i>
+                    Toaletare
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <h3 class="text-xl font-bold mb-2">
+                    Toaletare Copaci Ornamentali
+                  </h3>
+                  <p class="text-sm text-white/90">
+                    Servicii profesionale de toaletare și întreținere copaci
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    2023
+                  </div>
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Maramureș
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="project-item group" data-category="irigatii">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="images/irigatii1.jpg"
+                  alt="Sistem irigații automatizat"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 bg-blue-500 text-white rounded-full text-sm font-medium backdrop-blur-sm"
+                  >
+                    <i class="fas fa-tint mr-1"></i>
+                    Irigații
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <h3 class="text-xl font-bold mb-2">
+                    Sistem Irigații Automatizat
+                  </h3>
+                  <p class="text-sm text-white/90">
+                    Instalare sisteme moderne de irigații pentru grădini
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    2023
+                  </div>
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Baia Mare
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 5 -->
+          <div class="project-item group" data-category="pavaje">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="images/escavator3.jpg"
+                  alt="Pavaj modern grădină"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 bg-purple-500 text-white rounded-full text-sm font-medium backdrop-blur-sm"
+                  >
+                    <i class="fas fa-road mr-1"></i>
+                    Pavaje
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <h3 class="text-xl font-bold mb-2">Pavaj Modern Grădină</h3>
+                  <p class="text-sm text-white/90">
+                    Amenajare alei și spații cu pavaj decorativ
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    2024
+                  </div>
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Maramureș
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 6 -->
+          <div class="project-item group" data-category="transport">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative overflow-hidden">
+                <img
+                  src="images/transport1.jpg"
+                  alt="Transport materiale"
+                  class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                ></div>
+                <div class="absolute top-4 right-4">
+                  <span
+                    class="inline-flex items-center px-3 py-1 bg-orange-500 text-white rounded-full text-sm font-medium backdrop-blur-sm"
+                  >
+                    <i class="fas fa-truck mr-1"></i>
+                    Transport
+                  </span>
+                </div>
+                <div
+                  class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
+                  <h3 class="text-xl font-bold mb-2">Transport Materiale</h3>
+                  <p class="text-sm text-white/90">
+                    Servicii de transport pentru materiale de construcție
+                  </p>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    2023
+                  </div>
+                  <div class="flex items-center text-gray-500 text-sm">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    Baia Mare
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="py-20 bg-gradient-to-r from-primary to-secondary text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold mb-4">Inspirat de proiectele noastre?</h2>
+        <p class="text-xl mb-8 text-white/90">
+          Hai să creăm împreună următorul proiect de excepție pentru grădina ta
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="contact.html"
+            class="bg-white text-primary px-8 py-4 rounded-full font-medium hover:bg-primary hover:text-white hover:border-white border-2 border-white transition-colors"
+          >
+            <i class="fas fa-seedling mr-2"></i>
+            Începe Proiectul Tău
+          </a>
+          <a
+            href="tel:0766431164"
+            class="border-2 border-white text-white px-8 py-4 rounded-full font-medium hover:bg-white hover:text-primary transition-colors"
+          >
+            <i class="fas fa-phone mr-2"></i>
+            Sună pentru Detalii
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+
+    <script>
+      // Modern Portfolio Filtering
+      document.addEventListener("DOMContentLoaded", () => {
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const projectItems = document.querySelectorAll(".project-item");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Remove active class from all buttons
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            // Add active class to clicked button
+            button.classList.add("active");
+
+            const filterValue = button.getAttribute("data-filter");
+
+            projectItems.forEach((item) => {
+              if (
+                filterValue === "all" ||
+                item.getAttribute("data-category") === filterValue
+              ) {
+                item.classList.remove("hidden");
+              } else {
+                item.classList.add("hidden");
+              }
+            });
+          });
+        });
+
+        // Add scroll animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.animationDelay = Math.random() * 0.3 + "s";
+              entry.target.classList.add("animate-fade-in");
+            }
+          });
+        }, observerOptions);
+
+        projectItems.forEach((item) => {
+          observer.observe(item);
+        });
+      });
+    </script>
+  </body>
+</html>

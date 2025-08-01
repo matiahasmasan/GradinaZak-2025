@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gradina Zak - Servicii profesionale de amenajare și întreținere grădini în Maramureș și Baia Mare. Peisagistică, toaletare copaci, irigații, drenaje și multe altele."
+    />
+    <meta
+      name="keywords"
+      content="amenajare gradini, intretinere gradini, peisagistica, toaletare copaci, irigatii, Baia Mare, Maramures"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Gradina Zak" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Gradina Zak - Amenajare și Întreținere Grădini Maramureș"
+    />
+    <meta
+      property="og:description"
+      content="Servicii profesionale de peisagistică și întreținere verde în Maramureș. Experiență de peste 25 de ani."
+    />
+    <meta property="og:image" content="https://gradinazak.ro/images/logo.jpg" />
+    <meta property="og:url" content="https://gradinazak.ro/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ro_RO" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Gradina Zak",
+        "description": "Servicii profesionale de amenajare și întreținere grădini",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Strada Dealul Grosului nr.16",
+          "addressLocality": "Baia Mare",
+          "addressRegion": "Maramureș",
+          "addressCountry": "România"
+        },
+        "telephone": "0766 431 164",
+        "email": "office@gradinazak.ro",
+        "url": "https://gradinazak.ro",
+        "sameAs": ["https://www.facebook.com/gradinazak/"]
+      }
+    </script>
+
+    <title>
+      Gradina Zak - Amenajare și Întreținere Grădini Maramureș | Servicii
+      Profesionale Peisagistică
+    </title>
+    <link rel="canonical" href="https://gradinazak.ro/" />
+    <link rel="icon" href="images/utility/logo.jpg" type="image/x-icon" />
+
+    <!-- Preload critical resources -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2F5233",
+              secondary: "#4A7C59",
+              accent: "#8FB996",
+              light: "#E8F5E8",
+              dark: "#1A2F1D",
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+            },
+            animation: {
+              "fade-in": "fadeIn 0.6s ease-in-out",
+              "slide-up": "slideUp 0.8s ease-out",
+              "zoom-in": "zoomIn 0.3s ease-out",
+              "scale-up": "scaleUp 0.3s ease-out",
+              float: "float 3s ease-in-out infinite",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0", transform: "translateY(20px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              slideUp: {
+                "0%": { opacity: "0", transform: "translateY(40px)" },
+                "100%": { opacity: "1", transform: "translateY(0)" },
+              },
+              zoomIn: {
+                "0%": { opacity: "0", transform: "scale(0.9)" },
+                "100%": { opacity: "1", transform: "scale(1)" },
+              },
+              scaleUp: {
+                "0%": { transform: "scale(1)" },
+                "100%": { transform: "scale(1.05)" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="font-sans bg-white scroll-smooth" data-page="home">
+    <!-- Navigation Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-screen overflow-hidden flex items-center"
+    >
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img
+          src="images/gradina1.jpg"
+          alt="Grădină amenajată profesional"
+          class="w-full h-full object-cover"
+        />
+        <!-- Gradient Overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/85 to-accent/80"
+        ></div>
+      </div>
+
+      <!-- Background Pattern -->
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute inset-0"
+          style="
+            background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.1&quot;%3E%3Ccircle cx=&quot;30&quot; cy=&quot;30&quot; r=&quot;2&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+          "
+        ></div>
+      </div>
+
+      <!-- Floating Elements -->
+      <div
+        class="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full animate-float"
+      ></div>
+      <div
+        class="absolute top-40 right-20 w-16 h-16 bg-white/10 rounded-full animate-float"
+        style="animation-delay: 1s"
+      ></div>
+      <div
+        class="absolute bottom-40 left-20 w-12 h-12 bg-white/10 rounded-full animate-float"
+        style="animation-delay: 2s"
+      ></div>
+
+      <div
+        class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white"
+      >
+        <div
+          class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-8 animate-fade-in"
+        >
+          <i class="fas fa-award mr-2"></i>
+          Peste 25 de ani de experiență
+        </div>
+
+        <h1
+          class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 animate-slide-up"
+        >
+          Gradina
+          <span
+            class="bg-gradient-to-r from-white to-accent bg-clip-text text-transparent"
+          >
+            ZAK
+          </span>
+        </h1>
+
+        <p
+          class="text-xl md:text-2xl lg:text-3xl text-white/90 mb-12 animate-slide-up max-w-5xl mx-auto leading-relaxed"
+        >
+          Transformăm spațiile verzi în adevărate opere de artă peisagistică
+          prin servicii profesionale de amenajare și întreținere grădini
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in"
+        >
+          <a
+            href="contact.html"
+            class="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-primary hover:text-white hover:border-white border-2 border-white transition-all duration-300 inline-flex items-center justify-center group"
+          >
+            <i
+              class="fas fa-seedling mr-3 group-hover:scale-110 transition-transform"
+            ></i>
+            Solicită Deviz Gratuit
+          </a>
+          <a
+            href="tel:0766431164"
+            class="border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-flex items-center justify-center group"
+          >
+            <i
+              class="fas fa-phone mr-3 group-hover:scale-110 transition-transform"
+            ></i>
+            0766 431 164
+          </a>
+        </div>
+
+        <!-- Key Features -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
+          <div class="flex items-center justify-center text-white/90">
+            <div
+              class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+            >
+              <i class="fas fa-seedling text-xl"></i>
+            </div>
+            <div class="text-left">
+              <div class="text-2xl font-bold">300+</div>
+              <div class="text-sm opacity-80">Proiecte</div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center text-white/90">
+            <div
+              class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+            >
+              <i class="fas fa-users text-xl"></i>
+            </div>
+            <div class="text-left">
+              <div class="text-2xl font-bold">100+</div>
+              <div class="text-sm opacity-80">Clienți</div>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-center text-white/90">
+            <div
+              class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+            >
+              <i class="fas fa-handshake text-xl"></i>
+            </div>
+            <div class="text-left">
+              <div class="text-2xl font-bold">5+</div>
+              <div class="text-sm opacity-80">Parteneri</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <a href="#servicii" class="block">
+          <div
+            class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center"
+          >
+            <div
+              class="w-1 h-3 bg-white/70 rounded-full mt-2 animate-pulse"
+            ></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="animate-slide-up">
+            <div
+              class="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full text-sm font-medium mb-6"
+            >
+              <i class="fas fa-info-circle mr-2 text-primary"></i>
+              Despre Noi
+            </div>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">
+              Peste 25 de Ani de
+              <span class="text-accent">Experiență</span>
+            </h2>
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-6">
+              Gradina ZAK este o firmă cu experiență îndelungată în domeniul
+              amenajării și întreținerii spațiilor verzi. Cu o echipă de
+              specialiști dedicați, oferim servicii complete de peisagistică în
+              Maramureș și zonele limitrofe.
+            </p>
+
+            <p class="text-gray-600 text-lg leading-relaxed mb-8">
+              Fiecare proiect este abordat cu atenție la detalii și
+              profesionalism, asigurându-ne că rezultatul final depășește
+              așteptările clienților noștri.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="contact.html"
+                class="bg-primary hover:bg-secondary text-white px-8 py-3 rounded-full font-medium transition-colors inline-flex items-center justify-center group"
+              >
+                <i
+                  class="fas fa-phone mr-2 group-hover:scale-110 transition-transform"
+                ></i>
+                Contactează-ne
+              </a>
+              <a
+                href="portofolio.html"
+                class="border-2 border-primary text-primary px-8 py-3 rounded-full font-medium hover:bg-primary hover:text-white transition-colors inline-flex items-center justify-center group"
+              >
+                <i
+                  class="fas fa-images mr-2 group-hover:scale-110 transition-transform"
+                ></i>
+                Vezi Portofoliul
+              </a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-6 animate-slide-up">
+            <div class="space-y-6">
+              <img
+                src="images/gradina2.jpg"
+                alt="Amenajare grădină"
+                class="rounded-2xl shadow-lg object-cover h-48 w-full transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+              />
+              <img
+                src="images/gazon3.jpg"
+                alt="Sisteme irigații"
+                class="rounded-2xl shadow-lg object-cover h-64 w-full transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+              />
+            </div>
+            <div class="space-y-6 pt-12">
+              <img
+                src="images/gradina3.jpg"
+                alt="Peisagistică"
+                class="rounded-2xl shadow-lg object-cover h-64 w-full transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+              />
+              <img
+                src="images/pool1.jpg"
+                alt="Grădină elegantă"
+                class="rounded-2xl shadow-lg object-cover h-48 w-full transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicii" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-primary mb-4 animate-fade-in"
+          >
+            Serviciile Noastre
+          </h2>
+          <p class="text-gray-600 text-lg animate-slide-up max-w-3xl mx-auto">
+            Oferim o gamă completă de servicii pentru amenajarea și întreținerea
+            spațiilor verzi, adaptate nevoilor tale specifice
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Service Card 1 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative p-8 text-center">
+                <div
+                  class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors group-hover:scale-110 duration-300"
+                >
+                  <i
+                    class="fas fa-seedling text-3xl text-accent group-hover:scale-110 transition-transform"
+                  ></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">
+                  Amenajare Grădini
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Design și implementare completă de spații verzi moderne și
+                  funcționale
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative p-8 text-center">
+                <div
+                  class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary/20 transition-colors group-hover:scale-110 duration-300"
+                >
+                  <i
+                    class="fas fa-cut text-3xl text-secondary group-hover:scale-110 transition-transform"
+                  ></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">
+                  Toaletare Copaci
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Toaletare copaci și arbuști ornamentali, curățat pomi
+                  fructiferi
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative p-8 text-center">
+                <div
+                  class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors group-hover:scale-110 duration-300"
+                >
+                  <i
+                    class="fas fa-leaf text-3xl text-green-600 group-hover:scale-110 transition-transform"
+                  ></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">
+                  Gazon & Întreținere
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Însămânțare gazon și servicii complete de întreținere spații
+                  verzi
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative p-8 text-center">
+                <div
+                  class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors group-hover:scale-110 duration-300"
+                >
+                  <i
+                    class="fas fa-tint text-3xl text-blue-600 group-hover:scale-110 transition-transform"
+                  ></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">
+                  Irigații & Drenaje
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Sisteme irigații, canalizări, instalații apă și sisteme
+                  drenaje
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative p-8 text-center">
+                <div
+                  class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-200 transition-colors group-hover:scale-110 duration-300"
+                >
+                  <i
+                    class="fas fa-road text-3xl text-purple-600 group-hover:scale-110 transition-transform"
+                  ></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">
+                  Pavaje & Borduri
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Construcție alei, pavaje decorative și montaj borduri trotuare
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative p-8 text-center">
+                <div
+                  class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-200 transition-colors group-hover:scale-110 duration-300"
+                >
+                  <i
+                    class="fas fa-truck text-3xl text-orange-600 group-hover:scale-110 transition-transform"
+                  ></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">
+                  Transport & Excavator
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Transport materiale, săpături șanțuri cu excavatorul
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 7 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative p-8 text-center">
+                <div
+                  class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-red-200 transition-colors group-hover:scale-110 duration-300"
+                >
+                  <i
+                    class="fas fa-shield-alt text-3xl text-red-600 group-hover:scale-110 transition-transform"
+                  ></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">
+                  Tratamente Plante
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Tratamente în caz de îmbolnăvire - fungicide, pesticide,
+                  insecticide
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 8 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
+            >
+              <div class="relative p-8 text-center">
+                <div
+                  class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors group-hover:scale-110 duration-300"
+                >
+                  <i
+                    class="fas fa-tree text-3xl text-yellow-600 group-hover:scale-110 transition-transform"
+                  ></i>
+                </div>
+                <h3 class="text-xl font-bold text-primary mb-3">
+                  Defrișări & Curățenie
+                </h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Defrișat spații împădurite, dezapeziri curți, arat și frezat
+                  pământ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="portofolio.html"
+            class="bg-primary hover:bg-secondary text-white px-8 py-4 rounded-full font-medium transition-colors inline-flex items-center group"
+          >
+            <i
+              class="fas fa-images mr-2 group-hover:scale-110 transition-transform"
+            ></i>
+            Vezi Toate Serviciile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section
+      class="py-20 bg-gradient-to-r from-primary to-secondary text-white"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Gata să Îți Transformi Grădina?
+        </h2>
+        <p
+          class="text-xl md:text-2xl mb-12 text-white/90 max-w-4xl mx-auto leading-relaxed"
+        >
+          Contactează-ne astăzi pentru o consultație gratuită și să discutăm
+          despre visul tău de grădină perfectă
+        </p>
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+          <a
+            href="contact.html"
+            class="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-primary hover:text-white hover:border-white border-2 border-white transition-all duration-300 inline-flex items-center justify-center group"
+          >
+            <i
+              class="fas fa-seedling mr-3 group-hover:scale-110 transition-transform"
+            ></i>
+            Solicită Deviz Gratuit
+          </a>
+          <a
+            href="tel:0766431164"
+            class="border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-flex items-center justify-center group"
+          >
+            <i
+              class="fas fa-phone mr-3 group-hover:scale-110 transition-transform"
+            ></i>
+            Sună Acum: 0766 431 164
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+
+    <script>
+      // Add scroll animations and smooth scrolling
+      document.addEventListener("DOMContentLoaded", () => {
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.animationDelay = Math.random() * 0.3 + "s";
+              entry.target.classList.add("animate-fade-in");
+            }
+          });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document
+          .querySelectorAll(".group, .animate-slide-up, .animate-fade-in")
+          .forEach((item) => {
+            observer.observe(item);
+          });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "gradina-zak",
+  "version": "1.0.0",
+  "scripts": {},
+  "devDependencies": {
+    "tailwindcss": "^3.4.14"
+  }
+}
