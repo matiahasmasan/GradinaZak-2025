@@ -75,6 +75,60 @@
 
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Image Optimization Styles -->
+    <style>
+      /* Image optimization styles */
+      .fade-in {
+        animation: fadeIn 0.6s ease-in-out;
+      }
+
+      .progressive-loaded {
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .image-error {
+        opacity: 0.5;
+        filter: grayscale(100%);
+      }
+
+      /* Lazy loading placeholder */
+      img[loading="lazy"] {
+        background: linear-gradient(
+          90deg,
+          #f0f0f0 25%,
+          #e0e0e0 50%,
+          #f0f0f0 75%
+        );
+        background-size: 200% 100%;
+        animation: loading 1.5s infinite;
+      }
+
+      @keyframes loading {
+        0% {
+          background-position: 200% 0;
+        }
+        100% {
+          background-position: -200% 0;
+        }
+      }
+
+      /* Responsive image container */
+      .image-container {
+        position: relative;
+        overflow: hidden;
+        background-color: #f8f9fa;
+      }
+
+      .image-container img {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .image-container:hover img {
+        transform: scale(1.05);
+      }
+    </style>
+
     <script>
       tailwind.config = {
         theme: {
@@ -130,16 +184,40 @@
 
     <!-- Hero Section -->
     <section
-      id="home"
-      class="relative min-h-screen overflow-hidden flex items-center"
+      class="relative pt-32 pb-24 bg-gradient-to-br from-primary via-secondary to-accent overflow-hidden"
     >
       <!-- Background Image -->
       <div class="absolute inset-0">
-        <img
-          src="images/gradina1.jpg"
-          alt="Grădină amenajată profesional"
-          class="w-full h-full object-cover"
-        />
+        <picture>
+          <source
+            srcset="
+              images/gradina1-400.webp   400w,
+              images/gradina1-800.webp   800w,
+              images/gradina1-1200.webp 1200w,
+              images/gradina1-1920.webp 1920w
+            "
+            sizes="100vw"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              images/gradina1-400.jpg   400w,
+              images/gradina1-800.jpg   800w,
+              images/gradina1-1200.jpg 1200w,
+              images/gradina1-1920.jpg 1920w
+            "
+            sizes="100vw"
+            type="image/jpeg"
+          />
+          <img
+            src="images/gradina1.jpg"
+            alt="Grădină amenajată profesional"
+            class="w-full h-full object-cover"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
         <!-- Gradient Overlay -->
         <div
           class="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/85 to-accent/80"
@@ -173,14 +251,14 @@
         class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white"
       >
         <div
-          class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-8 animate-fade-in"
+          class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 sm:mb-8 animate-fade-in"
         >
           <i class="fas fa-award mr-2"></i>
           Peste 25 de ani de experiență
         </div>
 
         <h1
-          class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 animate-slide-up"
+          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 animate-slide-up"
         >
           Gradina
           <span
@@ -191,70 +269,72 @@
         </h1>
 
         <p
-          class="text-xl md:text-2xl lg:text-3xl text-white/90 mb-12 animate-slide-up max-w-5xl mx-auto leading-relaxed"
+          class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-white/90 mb-8 sm:mb-12 animate-slide-up max-w-4xl mx-auto leading-relaxed px-4"
         >
           Transformăm spațiile verzi în adevărate opere de artă peisagistică
           prin servicii profesionale de amenajare și întreținere grădini
         </p>
 
         <div
-          class="flex flex-col sm:flex-row gap-6 justify-center mb-16 animate-fade-in"
+          class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-12 sm:mb-16 animate-fade-in px-4"
         >
           <a
             href="contact.html"
-            class="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-primary hover:text-white hover:border-white border-2 border-white transition-all duration-300 inline-flex items-center justify-center group"
+            class="bg-white text-primary px-8 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-primary hover:text-white hover:border-white border-2 border-white transition-all duration-300 inline-flex items-center justify-center group"
           >
             <i
-              class="fas fa-seedling mr-3 group-hover:scale-110 transition-transform"
+              class="fas fa-seedling mr-2 sm:mr-3 group-hover:scale-110 transition-transform"
             ></i>
             Solicită Deviz Gratuit
           </a>
           <a
             href="tel:0766431164"
-            class="border-2 border-white text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-flex items-center justify-center group"
+            class="border-2 border-white text-white px-8 sm:px-10 py-3 sm:py-4 rounded-full font-bold text-base sm:text-lg hover:bg-white hover:text-primary transition-all duration-300 inline-flex items-center justify-center group"
           >
             <i
-              class="fas fa-phone mr-3 group-hover:scale-110 transition-transform"
+              class="fas fa-phone mr-2 sm:mr-3 group-hover:scale-110 transition-transform"
             ></i>
             0766 431 164
           </a>
         </div>
 
         <!-- Key Features -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 animate-fade-in">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 animate-fade-in px-4"
+        >
           <div class="flex items-center justify-center text-white/90">
             <div
-              class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-3 sm:mr-4"
             >
-              <i class="fas fa-seedling text-xl"></i>
+              <i class="fas fa-seedling text-lg sm:text-xl"></i>
             </div>
             <div class="text-left">
-              <div class="text-2xl font-bold">300+</div>
-              <div class="text-sm opacity-80">Proiecte</div>
+              <div class="text-xl sm:text-2xl font-bold">300+</div>
+              <div class="text-xs sm:text-sm opacity-80">Proiecte</div>
             </div>
           </div>
 
           <div class="flex items-center justify-center text-white/90">
             <div
-              class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-3 sm:mr-4"
             >
-              <i class="fas fa-users text-xl"></i>
+              <i class="fas fa-users text-lg sm:text-xl"></i>
             </div>
             <div class="text-left">
-              <div class="text-2xl font-bold">100+</div>
-              <div class="text-sm opacity-80">Clienți</div>
+              <div class="text-xl sm:text-2xl font-bold">100+</div>
+              <div class="text-xs sm:text-sm opacity-80">Clienți</div>
             </div>
           </div>
 
           <div class="flex items-center justify-center text-white/90">
             <div
-              class="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-4"
+              class="w-10 h-10 sm:w-12 sm:h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center mr-3 sm:mr-4"
             >
-              <i class="fas fa-handshake text-xl"></i>
+              <i class="fas fa-handshake text-lg sm:text-xl"></i>
             </div>
             <div class="text-left">
-              <div class="text-2xl font-bold">5+</div>
-              <div class="text-sm opacity-80">Parteneri</div>
+              <div class="text-xl sm:text-2xl font-bold">5+</div>
+              <div class="text-xs sm:text-sm opacity-80">Parteneri</div>
             </div>
           </div>
         </div>
@@ -331,26 +411,38 @@
           <div class="grid grid-cols-2 gap-6 animate-slide-up">
             <div class="space-y-6">
               <img
-                src="images/gradina2.jpg"
+                src="images/intretinere3.webp"
                 alt="Amenajare grădină"
                 class="rounded-2xl shadow-lg object-cover h-48 w-full transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+                loading="lazy"
+                fetchpriority="low"
+                decoding="async"
               />
               <img
-                src="images/gazon3.jpg"
+                src="images/gazon3.webp"
                 alt="Sisteme irigații"
                 class="rounded-2xl shadow-lg object-cover h-64 w-full transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+                loading="lazy"
+                fetchpriority="low"
+                decoding="async"
               />
             </div>
             <div class="space-y-6 pt-12">
               <img
-                src="images/gradina3.jpg"
+                src="images/gradina3.webp"
                 alt="Peisagistică"
                 class="rounded-2xl shadow-lg object-cover h-64 w-full transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+                loading="lazy"
+                fetchpriority="low"
+                decoding="async"
               />
               <img
-                src="images/pool1.jpg"
+                src="images/pool1.webp"
                 alt="Grădină elegantă"
                 class="rounded-2xl shadow-lg object-cover h-48 w-full transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+                loading="lazy"
+                fetchpriority="low"
+                decoding="async"
               />
             </div>
           </div>
@@ -381,10 +473,10 @@
             >
               <div class="relative p-8 text-center">
                 <div
-                  class="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent/20 transition-colors group-hover:scale-110 duration-300"
+                  class="w-20 h-20 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-emerald-500/20 transition-colors group-hover:scale-110 duration-300"
                 >
                   <i
-                    class="fas fa-seedling text-3xl text-accent group-hover:scale-110 transition-transform"
+                    class="fas fa-seedling text-3xl text-emerald-600 group-hover:scale-110 transition-transform"
                   ></i>
                 </div>
                 <h3 class="text-xl font-bold text-primary mb-3">
@@ -405,10 +497,10 @@
             >
               <div class="relative p-8 text-center">
                 <div
-                  class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary/20 transition-colors group-hover:scale-110 duration-300"
+                  class="w-20 h-20 bg-green-600/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-600/20 transition-colors group-hover:scale-110 duration-300"
                 >
                   <i
-                    class="fas fa-cut text-3xl text-secondary group-hover:scale-110 transition-transform"
+                    class="fas fa-tree text-3xl text-green-700 group-hover:scale-110 transition-transform"
                   ></i>
                 </div>
                 <h3 class="text-xl font-bold text-primary mb-3">
@@ -429,10 +521,10 @@
             >
               <div class="relative p-8 text-center">
                 <div
-                  class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-200 transition-colors group-hover:scale-110 duration-300"
+                  class="w-20 h-20 bg-teal-500/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-teal-500/20 transition-colors group-hover:scale-110 duration-300"
                 >
                   <i
-                    class="fas fa-leaf text-3xl text-green-600 group-hover:scale-110 transition-transform"
+                    class="fas fa-leaf text-3xl text-teal-600 group-hover:scale-110 transition-transform"
                   ></i>
                 </div>
                 <h3 class="text-xl font-bold text-primary mb-3">
@@ -453,10 +545,10 @@
             >
               <div class="relative p-8 text-center">
                 <div
-                  class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-blue-200 transition-colors group-hover:scale-110 duration-300"
+                  class="w-20 h-20 bg-cyan-500/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-cyan-500/20 transition-colors group-hover:scale-110 duration-300"
                 >
                   <i
-                    class="fas fa-tint text-3xl text-blue-600 group-hover:scale-110 transition-transform"
+                    class="fas fa-tint text-3xl text-cyan-600 group-hover:scale-110 transition-transform"
                   ></i>
                 </div>
                 <h3 class="text-xl font-bold text-primary mb-3">
@@ -477,10 +569,10 @@
             >
               <div class="relative p-8 text-center">
                 <div
-                  class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-purple-200 transition-colors group-hover:scale-110 duration-300"
+                  class="w-20 h-20 bg-lime-500/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-lime-500/20 transition-colors group-hover:scale-110 duration-300"
                 >
                   <i
-                    class="fas fa-road text-3xl text-purple-600 group-hover:scale-110 transition-transform"
+                    class="fas fa-road text-3xl text-lime-600 group-hover:scale-110 transition-transform"
                   ></i>
                 </div>
                 <h3 class="text-xl font-bold text-primary mb-3">
@@ -500,10 +592,10 @@
             >
               <div class="relative p-8 text-center">
                 <div
-                  class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-orange-200 transition-colors group-hover:scale-110 duration-300"
+                  class="w-20 h-20 bg-green-800/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-800/20 transition-colors group-hover:scale-110 duration-300"
                 >
                   <i
-                    class="fas fa-truck text-3xl text-orange-600 group-hover:scale-110 transition-transform"
+                    class="fas fa-truck text-3xl text-green-800 group-hover:scale-110 transition-transform"
                   ></i>
                 </div>
                 <h3 class="text-xl font-bold text-primary mb-3">
@@ -523,10 +615,10 @@
             >
               <div class="relative p-8 text-center">
                 <div
-                  class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-red-200 transition-colors group-hover:scale-110 duration-300"
+                  class="w-20 h-20 bg-green-400/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-400/20 transition-colors group-hover:scale-110 duration-300"
                 >
                   <i
-                    class="fas fa-shield-alt text-3xl text-red-600 group-hover:scale-110 transition-transform"
+                    class="fas fa-shield-alt text-3xl text-green-500 group-hover:scale-110 transition-transform"
                   ></i>
                 </div>
                 <h3 class="text-xl font-bold text-primary mb-3">
@@ -547,10 +639,10 @@
             >
               <div class="relative p-8 text-center">
                 <div
-                  class="w-20 h-20 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-yellow-200 transition-colors group-hover:scale-110 duration-300"
+                  class="w-20 h-20 bg-green-900/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-green-900/20 transition-colors group-hover:scale-110 duration-300"
                 >
                   <i
-                    class="fas fa-tree text-3xl text-yellow-600 group-hover:scale-110 transition-transform"
+                    class="fas fa-cut text-3xl text-green-900 group-hover:scale-110 transition-transform"
                   ></i>
                 </div>
                 <h3 class="text-xl font-bold text-primary mb-3">
@@ -621,6 +713,8 @@
 
     <!-- Scripts -->
     <script src="js/utils.js"></script>
+    <script src="js/image-optimizer.js"></script>
+    <script src="js/performance-monitor.js"></script>
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
 

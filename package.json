@@ -4,5 +4,8 @@
   "scripts": {},
   "devDependencies": {
     "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "sharp": "^0.34.3"
   }
 }

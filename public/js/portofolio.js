@@ -16,6 +16,7 @@ class Portfolio {
     const filterButtons = document.querySelectorAll(".filter-btn");
     const projectItems = document.querySelectorAll(".project-item");
 
+    // Desktop filter buttons
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
         // Remove active class from all buttons
@@ -37,6 +38,9 @@ class Portfolio {
       });
     });
 
+    // Mobile dropdown functionality
+    this.initMobileDropdown();
+
     // Check URL for initial filter
     const urlParams = new URLSearchParams(window.location.search);
     const initialFilter = urlParams.get("filter");
@@ -48,6 +52,70 @@ class Portfolio {
         filterBtn.click();
       }
     }
+  }
+
+  initMobileDropdown() {
+    const mobileButton = document.getElementById("mobile-filter-button");
+    const mobileDropdown = document.getElementById("mobile-filter-dropdown");
+    const mobileFilterText = document.getElementById("mobile-filter-text");
+    const mobileFilterArrow = document.getElementById("mobile-filter-arrow");
+    const mobileOptions = document.querySelectorAll(".mobile-filter-option");
+    const projectItems = document.querySelectorAll(".project-item");
+
+    if (!mobileButton || !mobileDropdown) return;
+
+    // Toggle dropdown
+    mobileButton.addEventListener("click", () => {
+      const isOpen = !mobileDropdown.classList.contains("hidden");
+
+      if (isOpen) {
+        mobileDropdown.classList.add("hidden");
+        mobileFilterArrow.style.transform = "rotate(0deg)";
+      } else {
+        mobileDropdown.classList.remove("hidden");
+        mobileFilterArrow.style.transform = "rotate(180deg)";
+      }
+    });
+
+    // Handle option selection
+    mobileOptions.forEach((option) => {
+      option.addEventListener("click", () => {
+        const filterValue = option.getAttribute("data-filter");
+        const optionText = option.querySelector("span").textContent;
+        const optionIcon = option.querySelector("i").className;
+
+        // Update button text and icon
+        mobileFilterText.textContent = optionText;
+        mobileButton.querySelector("i").className = optionIcon;
+
+        // Close dropdown
+        mobileDropdown.classList.add("hidden");
+        mobileFilterArrow.style.transform = "rotate(0deg)";
+
+        // Filter projects
+        this.filterProjects(filterValue, projectItems);
+
+        // Update URL without page reload
+        const url = new URL(window.location);
+        if (filterValue === "all") {
+          url.searchParams.delete("filter");
+        } else {
+          url.searchParams.set("filter", filterValue);
+        }
+        window.history.replaceState({}, "", url);
+      });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", (e) => {
+      if (
+        !mobileButton.contains(e.target) &&
+        !mobileDropdown.contains(e.target)
+      ) {
+        mobileDropdown.classList.add("hidden");
+        mobileFilterArrow.style.transform = "rotate(0deg)";
+      }
+    });
   }
 
   filterProjects(filterValue, projectItems) {

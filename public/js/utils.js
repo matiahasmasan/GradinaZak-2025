@@ -246,9 +246,9 @@ class Utils {
       // Preload critical images
       this.preloadImages([
         "images/utility/logo.jpg",
-        "images/gradina1.jpg",
-        "images/gradina2.jpg",
-        "images/gradina3.jpg",
+        "images/gradina1.webp",
+        "images/gradina2.webp",
+        "images/gradina3.webp",
       ]);
 
       // Format phone inputs
