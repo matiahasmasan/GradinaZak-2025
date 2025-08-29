@@ -3,7 +3,7 @@ const portfolioProjects = [
   // Amenajare Grădini
   {
     id: 1,
-    image: "images/gradina1.jpg",
+    image: "images/gradina1.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -13,7 +13,7 @@ const portfolioProjects = [
   },
   {
     id: 2,
-    image: "images/gradina2.jpg",
+    image: "images/gradina2.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -23,7 +23,7 @@ const portfolioProjects = [
   },
   {
     id: 3,
-    image: "images/gradina3.jpg",
+    image: "images/gradina3.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -33,7 +33,7 @@ const portfolioProjects = [
   },
   {
     id: 4,
-    image: "images/pool1.jpg",
+    image: "images/pool1.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -43,7 +43,7 @@ const portfolioProjects = [
   },
   {
     id: 5,
-    image: "images/pool2.jpg",
+    image: "images/pool2.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -53,7 +53,7 @@ const portfolioProjects = [
   },
   {
     id: 6,
-    image: "images/pool3.jpg",
+    image: "images/pool3.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -63,7 +63,7 @@ const portfolioProjects = [
   },
   {
     id: 7,
-    image: "images/copaci1.jpg",
+    image: "images/copaci1.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -73,7 +73,7 @@ const portfolioProjects = [
   },
   {
     id: 8,
-    image: "images/copaci2.jpg",
+    image: "images/copaci2.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -83,7 +83,7 @@ const portfolioProjects = [
   },
   {
     id: 9,
-    image: "images/copaci3.jpg",
+    image: "images/copaci3.webp",
     category: "amenajare",
     categoryLabel: "Amenajare",
     categoryIcon: "fas fa-seedling",
@@ -93,7 +93,7 @@ const portfolioProjects = [
   },
   {
     id: 10,
-    image: "images/toaletare1.jpg",
+    image: "images/toaletare1.webp",
     category: "toaletare",
     categoryLabel: "Toaletare",
     categoryIcon: "fas fa-tree",
@@ -103,7 +103,7 @@ const portfolioProjects = [
   },
   {
     id: 11,
-    image: "images/toaletare2.jpg",
+    image: "images/toaletare2.webp",
     category: "toaletare",
     categoryLabel: "Toaletare",
     categoryIcon: "fas fa-tree",
@@ -113,7 +113,7 @@ const portfolioProjects = [
   },
   {
     id: 12,
-    image: "images/toaletare3.jpg",
+    image: "images/toaletare3.webp",
     category: "toaletare",
     categoryLabel: "Toaletare",
     categoryIcon: "fas fa-tree",
@@ -125,7 +125,7 @@ const portfolioProjects = [
   // Sisteme de Irigații
   {
     id: 13,
-    image: "images/irigatii1.jpg",
+    image: "images/irigatii1.webp",
     category: "irigatii",
     categoryLabel: "Irigații",
     categoryIcon: "fas fa-tint",
@@ -135,7 +135,7 @@ const portfolioProjects = [
   },
   {
     id: 14,
-    image: "images/irigatii2.jpg",
+    image: "images/irigatii2.webp",
     category: "irigatii",
     categoryLabel: "Irigații",
     categoryIcon: "fas fa-tint",
@@ -145,7 +145,7 @@ const portfolioProjects = [
   },
   {
     id: 15,
-    image: "images/irigatii3.jpg",
+    image: "images/irigatii3.webp",
     category: "irigatii",
     categoryLabel: "Irigații",
     categoryIcon: "fas fa-tint",
@@ -157,7 +157,7 @@ const portfolioProjects = [
   // Întreținere și Gazon
   {
     id: 16,
-    image: "images/intretinere1.jpg",
+    image: "images/intretinere1.webp",
     category: "intretinere",
     categoryLabel: "Întreținere",
     categoryIcon: "fas fa-leaf",
@@ -167,7 +167,7 @@ const portfolioProjects = [
   },
   {
     id: 17,
-    image: "images/intretinere2.jpg",
+    image: "images/intretinere2.webp",
     category: "intretinere",
     categoryLabel: "Întreținere",
     categoryIcon: "fas fa-leaf",
@@ -177,7 +177,7 @@ const portfolioProjects = [
   },
   {
     id: 18,
-    image: "images/intretinere3.jpg",
+    image: "images/intretinere3.webp",
     category: "intretinere",
     categoryLabel: "Întreținere",
     categoryIcon: "fas fa-leaf",
@@ -187,7 +187,7 @@ const portfolioProjects = [
   },
   {
     id: 19,
-    image: "images/gazon1.jpg",
+    image: "images/gazon1.webp",
     category: "gazon",
     categoryLabel: "Gazon",
     categoryIcon: "fas fa-seedling",
@@ -197,7 +197,7 @@ const portfolioProjects = [
   },
   {
     id: 20,
-    image: "images/gazon2.jpg",
+    image: "images/gazon2.webp",
     category: "gazon",
     categoryLabel: "Gazon",
     categoryIcon: "fas fa-seedling",
@@ -207,7 +207,7 @@ const portfolioProjects = [
   },
   {
     id: 21,
-    image: "images/gazon3.jpg",
+    image: "images/gazon3.webp",
     category: "gazon",
     categoryLabel: "Gazon",
     categoryIcon: "fas fa-seedling",
@@ -219,7 +219,7 @@ const portfolioProjects = [
   // Transport și Utilaje
   {
     id: 22,
-    image: "images/transport1.jpg",
+    image: "images/transport1.webp",
     category: "transport",
     categoryLabel: "Transport",
     categoryIcon: "fas fa-truck",
@@ -229,7 +229,7 @@ const portfolioProjects = [
   },
   {
     id: 23,
-    image: "images/transport2.jpg",
+    image: "images/transport2.webp",
     category: "transport",
     categoryLabel: "Transport",
     categoryIcon: "fas fa-truck",
@@ -239,7 +239,7 @@ const portfolioProjects = [
   },
   {
     id: 24,
-    image: "images/transport3.jpg",
+    image: "images/transport3.webp",
     category: "transport",
     categoryLabel: "Transport",
     categoryIcon: "fas fa-truck",
@@ -249,7 +249,7 @@ const portfolioProjects = [
   },
   {
     id: 25,
-    image: "images/escavator1.jpg",
+    image: "images/escavator1.webp",
     category: "escavator",
     categoryLabel: "Escavator",
     categoryIcon: "fas fa-hammer",
@@ -259,7 +259,7 @@ const portfolioProjects = [
   },
   {
     id: 26,
-    image: "images/escavator2.jpg",
+    image: "images/escavator2.webp",
     category: "escavator",
     categoryLabel: "Escavator",
     categoryIcon: "fas fa-hammer",
@@ -269,7 +269,7 @@ const portfolioProjects = [
   },
   {
     id: 27,
-    image: "images/escavator3.jpg",
+    image: "images/escavator3.webp",
     category: "escavator",
     categoryLabel: "Escavator",
     categoryIcon: "fas fa-hammer",
@@ -281,7 +281,7 @@ const portfolioProjects = [
   // Servicii Specializate
   {
     id: 28,
-    image: "images/desrisat1.jpg",
+    image: "images/desrisat1.webp",
     category: "defrisari",
     categoryLabel: "Defrișare",
     categoryIcon: "fas fa-cut",
@@ -291,7 +291,7 @@ const portfolioProjects = [
   },
   {
     id: 29,
-    image: "images/desrisat2.jpg",
+    image: "images/desrisat2.webp",
     category: "defrisari",
     categoryLabel: "Defrișare",
     categoryIcon: "fas fa-cut",
@@ -301,7 +301,7 @@ const portfolioProjects = [
   },
   {
     id: 30,
-    image: "images/desrisat3.jpg",
+    image: "images/desrisat3.webp",
     category: "defrisari",
     categoryLabel: "Defrișare",
     categoryIcon: "fas fa-cut",
@@ -311,7 +311,7 @@ const portfolioProjects = [
   },
   {
     id: 31,
-    image: "images/drenaje1.jpg",
+    image: "images/drenaje1.webp",
     category: "drenaje",
     categoryLabel: "Drenaje",
     categoryIcon: "fas fa-water",
@@ -321,7 +321,7 @@ const portfolioProjects = [
   },
   {
     id: 32,
-    image: "images/drenaje2.jpg",
+    image: "images/drenaje2.webp",
     category: "drenaje",
     categoryLabel: "Drenaje",
     categoryIcon: "fas fa-water",
@@ -331,7 +331,7 @@ const portfolioProjects = [
   },
   {
     id: 33,
-    image: "images/drenaje3.jpg",
+    image: "images/drenaje3.webp",
     category: "drenaje",
     categoryLabel: "Drenaje",
     categoryIcon: "fas fa-water",
@@ -341,7 +341,7 @@ const portfolioProjects = [
   },
   {
     id: 34,
-    image: "images/rulouri1.jpg",
+    image: "images/rulouri1.webp",
     category: "gazon",
     categoryLabel: "Gazon",
     categoryIcon: "fas fa-seedling",
@@ -351,7 +351,7 @@ const portfolioProjects = [
   },
   {
     id: 35,
-    image: "images/rulouri2.jpg",
+    image: "images/rulouri2.webp",
     category: "gazon",
     categoryLabel: "Gazon",
     categoryIcon: "fas fa-seedling",
@@ -361,7 +361,7 @@ const portfolioProjects = [
   },
   {
     id: 36,
-    image: "images/rulouri3.jpg",
+    image: "images/rulouri3.webp",
     category: "gazon",
     categoryLabel: "Gazon",
     categoryIcon: "fas fa-seedling",

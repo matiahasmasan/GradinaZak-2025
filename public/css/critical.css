@@ -54,6 +54,22 @@
 /* Utility classes */
 .scroll-smooth {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Better scrolling on iOS */
+}
+
+/* Responsive base styles */
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+}
+
+/* Better touch targets for mobile */
+@media (pointer: coarse) {
+  button, 
+  [role="button"],
+  a[href] {
+    min-height: 44px; /* Minimum touch target size */
+    min-width: 44px;
+  }
 }
 
 /* Glass effect for navbar */
@@ -65,34 +81,6 @@
 /* Navigation shadow */
 .nav-shadow {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Hero gradient background */
-.hero-gradient {
-  background: linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(94, 117, 101, 0.336) 100%
-    ),
-    url("../images/gradina1.jpg") center/cover;
-}
-
-.contact-gradient {
-  background: linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(94, 117, 101, 0.336) 100%
-    ),
-    url("../images/gradina2.jpg") center/cover;
-}
-
-.portfolio-gradient {
-  background: linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(94, 117, 101, 0.336) 100%
-    ),
-    url("../images/gradina3.jpg") center/cover;
 }
 
 /* Card effects */
